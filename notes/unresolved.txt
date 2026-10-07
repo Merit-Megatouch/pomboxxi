@@ -1,0 +1,66 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+ImageExists(char*) | pomboxxi.so
+GetHelpFileName(char (&) [255], char const*, Locale::Languages, char const*) | pomboxxi.so
+MeritthonDisplayRound(int, int, int, unsigned long) | pomboxxi.so
+t_i_l() | pomboxxi.so
+megastart(char const*, app_common::args_t*) | pomboxxi.so
+Translator::SetCurrentLanguage(Locale::Languages) | pomboxxi.so
+VideoClass::ShowPCX(char const*, short, short, unsigned char) | pomboxxi.so
+SystemClass::WaitTouch(long) | pomboxxi.so
+system_info::SystemInfo::GetInstance() | pomboxxi.so
+system_info::SystemInfo::IsPlatformGameTime() | pomboxxi.so
+system_info::Get_Motherboard_Type() | pomboxxi.so
+MouseManager::SetDebounce(int) | pomboxxi.so
+MouseManager::Pop() | pomboxxi.so
+MouseManager::Push() | pomboxxi.so
+xml_gameinfo::enum_GameIds_tag(xml_gameinfo::GameIds, bool) | libcontent.so
+ChainRestClass::GetPicFileName(xml_gameinfo::GameIds, int) | pomboxxi.so
+xml_gamerandom::PICRAND_record::AdjustTime(int, long) | pomboxxi.so
+xml_gamerandom::PICRAND_record::PICRAND_record(xml_gamerandom::PICRAND_record const&) | pomboxxi.so
+xml_gamerandom::PICRAND_record::PICRAND_record() | pomboxxi.so
+xml_gamerandom::PICRAND_record::~PICRAND_record() | pomboxxi.so
+xml_gamerandom::PICRAND_record::operator=(xml_gamerandom::PICRAND_record const&) | pomboxxi.so
+RandomizedArrayClass::SetBookMark(unsigned char) | pomboxxi.so
+RandomizedArrayClass::GetNextValue(int) | pomboxxi.so
+RandomizedArrayClass::GotoBookMark(unsigned char) | pomboxxi.so
+RandomizedArrayClass::RandomizedArrayClass(xml_gamerandom::PICRAND_record*, int, unsigned char, unsigned short*) | pomboxxi.so
+RandomizedArrayClass::~RandomizedArrayClass() | pomboxxi.so
+Books::LogCategoryPlays(xml_gameinfo::GameIds, int, int) | pomboxxi.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | pomboxxi.so
+Books::Instance() | pomboxxi.so
+USBIO::FoundUSB() | pomboxxi.so
+Bitmap::ConvertSmack(unsigned char) | pomboxxi.so
+Bitmap::CopyFromScreen(int, int, bool) | pomboxxi.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | pomboxxi.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | pomboxxi.so
+Bitmap::GreyBmp() | pomboxxi.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | pomboxxi.so
+Bitmap::LoadSmack(char*, unsigned char, unsigned char) | pomboxxi.so
+Settings::Init() | libcontent.so
+Settings::Init() | pomboxxi.so
+Settings::Load() | libcontent.so
+Settings::Load() | pomboxxi.so
+Settings::Cleanup() | libcontent.so
+Settings::Cleanup() | pomboxxi.so
+Settings::Restore(abstract_xml_record const*) | libcontent.so
+Settings::Restore(abstract_xml_record const*) | pomboxxi.so
+Settings::SaveNow() | libcontent.so
+Settings::Settings(char const*, unsigned int) | libcontent.so
+Settings::Settings(char const*, unsigned int) | pomboxxi.so
+Settings::~Settings() | libcontent.so
+Settings::~Settings() | pomboxxi.so
+xml_gamerandom::PICRAND_record::operator!=(xml_gamerandom::PICRAND_record const&) const | pomboxxi.so
+Settings::Key(unsigned int, bool) const | libcontent.so
+Settings::Key(unsigned int, bool) const | pomboxxi.so
+typeinfo for Settings | libcontent.so
+typeinfo for Settings | pomboxxi.so
+typeinfo for xml_gamerandom::PICRAND_record | pomboxxi.so
+al_findclose | pomboxxi.so
+al_findfirst | pomboxxi.so
+al_findnext | pomboxxi.so
+clear_bitmap | pomboxxi.so
+gfx_driver | pomboxxi.so
+screen | pomboxxi.so
